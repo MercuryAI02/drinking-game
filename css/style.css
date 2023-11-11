@@ -48,7 +48,12 @@ body {
   transition: all 0.3s ease; /* Transition for interaction */
 }
 
-/* ... rest of the CSS ... */
+/* CSS for the action text */
+#actionText h2 {
+  color: gold; /* Change the title color to gold */
+  margin: 10px 0 0 0; /* Top margin */
+}
+
 
 /* Mobile styles */
 @media (max-width: 768px) {
