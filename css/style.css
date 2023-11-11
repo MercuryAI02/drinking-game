@@ -10,14 +10,6 @@ body {
 
 /* CSS for the top image */
 #topImage {
-  width: 90%; /* Adjust to your preference */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Block display to allow margin auto to work */
-  margin: 20px auto; /* Center the image horizontally and add some space */
-}
-
-/* CSS for the title image */
-#titleImage {
   width: auto; /* Adjust the width based on the original size */
   max-width: 600px; /* Max width for larger screens */
   height: auto; /* Maintain aspect ratio */
@@ -56,47 +48,13 @@ body {
   transition: all 0.3s ease; /* Transition for interaction */
 }
 
-#startButton:hover, #startButton:focus {
-  background: linear-gradient(to right, #feb47b, #ff7e5f); /* Hover background */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Hover box shadow */
-  transform: translateY(-2px); /* Lift button on hover */
-}
-
-/* CSS for the action text */
-#actionText h2 {
-  color: yellow; /* Title color */
-  margin: 10px 0 0 0; /* Top margin */
-}
-
-#actionText .instructions {
-  color: white; /* Instructions color */
-  font-size: 1.2em; /* Instructions font size */
-  margin-top: 20px; /* Top margin */
-  margin-bottom: 40px; /* Bottom margin for START button */
-}
-
-/* Styles for larger screens to adjust top image size */
-@media (min-width: 768px) {
-  #topImage {
-    max-width: 600px; /* Adjust the max width for larger screens or as needed */
-    margin: 20px auto; /* Center the image */
-  }
-
-  /* ... other styles for larger screens ... */
-}
+/* ... rest of the CSS ... */
 
 /* Mobile styles */
 @media (max-width: 768px) {
-  #topImage {
-    width: 90%; /* Full width on mobile */
+  #topImage, #titleImage, #imageContainer img {
+    width: 90%; /* Adjust to your preference */
     margin: 10px auto; /* Adjust margin as needed */
-  }
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  #titleImage, #imageContainer img {
-    max-width: 90%; /* Full width on mobile */
-    height: auto; /* Maintain aspect ratio */
   }
 
   #startButton {
@@ -111,8 +69,9 @@ body {
 
 /* Styles for larger screens to adjust image size and positioning */
 @media (min-width: 768px) {
-  #titleImage, #imageContainer img {
-    max-height: 50vh; /* Sets a max-height based on the viewport height */
+  #topImage, #titleImage, #imageContainer img {
+    max-width: 600px; /* Adjust the max width for larger screens or as needed */
+    margin: 20px auto; /* Center the image */
   }
 
   #gameContainer {
