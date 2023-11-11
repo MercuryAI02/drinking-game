@@ -44,13 +44,6 @@ body {
   margin: 20px auto; /* Center the button with automatic margins and add space around it */
 }
 
-/* CSS for the image container */
-#imageContainer img {
-  max-width: 90%;
-  height: auto;
-  margin-bottom: 20px; /* Add space below the images */
-}
-
 /* CSS for the action text */
 #actionText h2 {
   color: yellow; /* Keep the title yellow */
