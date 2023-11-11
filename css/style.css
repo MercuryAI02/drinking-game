@@ -19,11 +19,13 @@ body {
 }
 
 /* Ensure that the CSS for the game images matches */
-#imageContainer img {
-  width: 90%; /* Width of the game images is also 90% */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto 20px; /* Center images and add space below */
+#imageContainer {
+  width: 90%; /* or whatever width you prefer */
+  margin: 0 auto 20px;
+  min-height: 300px; /* Adjust this value based on the average height of your images */
+  position: relative; /* Ensures that the button stays below regardless of image container height */
 }
+
 
 /* CSS for the game container */
 #gameContainer {
