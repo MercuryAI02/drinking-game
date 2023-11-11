@@ -8,6 +8,14 @@ body {
   text-align: center;
 }
 
+/* CSS for the top image */
+#topImage {
+  width: 90%; /* Adjust to your preference */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Block display to allow margin auto to work */
+  margin: 20px auto; /* Center the image horizontally and add some space */
+}
+
 /* CSS for the title image */
 #titleImage {
   width: auto; /* Adjust the width based on the original size */
