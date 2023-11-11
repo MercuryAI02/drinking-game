@@ -1,20 +1,21 @@
 /* Existing CSS for body, etc... */
 
-/* New CSS for the title image */
+/* CSS for the title image */
 #titleImage {
-  width: auto; /* Allow the image to scale based on its original size */
+  width: auto; /* Adjust the width based on the original size */
   max-width: 33%; /* Set the maximum width to one-third of the container width */
-  height: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain the aspect ratio */
   display: block; /* Block display to allow margin auto to work */
   margin: 20px auto; /* Center the image horizontally and add some space */
 }
 
-/* Updated CSS for the game container */
+/* CSS for the game container */
 #gameContainer {
   text-align: center; /* Center contents */
+  padding-bottom: 20px; /* Add padding to the bottom to avoid overlap */
 }
 
-/* Updated CSS for the START button */
+/* CSS for the START button */
 #startButton {
   background-color: white;
   color: black;
@@ -24,7 +25,7 @@
   cursor: pointer;
   display: block; /* Make the button a block to fill width */
   width: 50%; /* Button takes up half the container width */
-  margin: 20px auto; /* Center the button with automatic margins */
+  margin: 20px auto; /* Center the button with automatic margins and add space around it */
 }
 
 /* CSS for the image container */
@@ -44,13 +45,17 @@
   color: white;
   font-size: 1.2em;
   margin-top: 20px;
+  margin-bottom: 40px; /* Increase the bottom margin to ensure separation from the START button */
 }
 
 /* Add media query for mobile responsiveness */
 @media (max-width: 768px) {
   #startButton {
     width: 80%; /* Increase width of the button on mobile for easier tap */
+    margin-bottom: 40px; /* Increase the bottom margin on mobile to prevent overlap */
+  }
+
+  #titleImage {
+    max-width: 50%; /* Increase the max-width for mobile devices if the title image is too small */
   }
 }
-
-  
