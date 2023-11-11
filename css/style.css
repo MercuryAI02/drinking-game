@@ -12,11 +12,17 @@ body {
 
 /* CSS for the title image */
 #titleImage {
-  width: auto; /* Adjust the width based on the original size */
-  max-width: 33%; /* Set the maximum width to one-third of the container width */
-  height: auto; /* Maintain the aspect ratio */
+  width: 90%; /* Set the width to match the game images width */
+  height: auto; /* Maintain aspect ratio */
   display: block; /* Block display to allow margin auto to work */
   margin: 20px auto; /* Center the image horizontally and add some space */
+}
+
+/* Ensure that the CSS for the game images matches */
+#imageContainer img {
+  width: 90%; /* Width of the game images is also 90% */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto 20px; /* Center images and add space below */
 }
 
 /* CSS for the game container */
