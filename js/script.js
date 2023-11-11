@@ -23,11 +23,6 @@ var cards = [
 var roulette;
 
 document.getElementById('startButton').addEventListener('click', function() {
-  // Play the sound effect
-  var soundEffect = document.getElementById('soundEffect');
-  soundEffect.play();
-
-document.getElementById('startButton').addEventListener('click', function() {
   // Hide the top image
   document.getElementById('topImage').style.display = 'none';
 
