@@ -10,7 +10,8 @@ body {
 
 /* CSS for the title image */
 #titleImage {
-  width: 90%; /* Set the width to match the game images width */
+  width: auto; /* Adjust the width based on the original size */
+  max-width: 600px; /* Max width for larger screens */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Block display to allow margin auto to work */
   margin: 20px auto; /* Center the image horizontally and add some space */
@@ -18,7 +19,8 @@ body {
 
 /* CSS for the image container */
 #imageContainer {
-  width: 90%; /* Width of the game images */
+  width: auto; /* Width of the game images */
+  max-width: 600px; /* Match title image max width */
   margin: 0 auto 20px;
   min-height: 300px; /* Minimum height to prevent layout shift */
   position: relative; /* Ensure the START button stays below */
@@ -67,30 +69,29 @@ body {
 
 /* Mobile styles */
 @media (max-width: 768px) {
+  #titleImage, #imageContainer img {
+    max-width: 90%; /* Full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+
   #startButton {
-    width: 80%; /* Mobile button width */
+    width: 80%; /* Button width on mobile */
     margin-bottom: 40px; /* Bottom margin on mobile */
   }
 
-  #titleImage {
-    max-width: 90%; /* Full width on mobile */
+  #imageContainer {
+    min-height: 0; /* Remove min-height on mobile */
   }
 }
 
 /* Styles for larger screens to adjust image size and positioning */
 @media (min-width: 768px) {
   #titleImage, #imageContainer img {
-    max-width: 600px; /* Max width for larger screens */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px auto; /* Center the images */
+    max-height: 50vh; /* Sets a max-height based on the viewport height */
   }
 
   #gameContainer {
     max-width: 650px; /* Max width for the game container on larger screens */
     margin: auto; /* Center the game container */
-  }
-
-  #startButton {
-    width: 50%; /* Button width on larger screens */
   }
 }
