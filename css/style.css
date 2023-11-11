@@ -33,15 +33,24 @@ body {
 
 /* CSS for the START button */
 #startButton {
-  background-color: white;
-  color: black;
-  padding: 20px 40px; /* Increased padding for a larger button */
-  font-size: 1.5em; /* Larger font size */
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+  color: #fff; /* White text color */
+  padding: 20px 40px;
+  font-size: 1.5em;
   border: none;
+  border-radius: 25px; /* Round corners */
   cursor: pointer;
-  display: block; /* Make the button a block to fill width */
-  width: 50%; /* Button takes up half the container width */
-  margin: 20px auto; /* Center the button with automatic margins and add space around it */
+  display: block;
+  width: 60%; /* Adjust width as needed */
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#startButton:hover, #startButton:focus {
+  background: linear-gradient(to right, #feb47b, #ff7e5f); /* Change gradient direction */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+  transform: translateY(-2px); /* Slight lift */
 }
 
 /* CSS for the action text */
