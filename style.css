@@ -1,0 +1,66 @@
+/* Style for the entire body of the page */
+body {
+    background-color: black; /* Set the entire background of the page to black */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white; /* Default text color set to white */
+    text-align: center; /* Center-align all the text */
+  }
+  
+  /* Style for the game title */
+  #title {
+    color: yellow; /* Set the title text color to yellow */
+    font-size: 2em; /* Increase the title text size */
+    margin: 20px 0; /* Add top and bottom margin around the title */
+  }
+  
+  /* Style for the game container */
+  #gameContainer {
+    margin: auto;
+  }
+  
+ /* Style for the START button */
+button#startButton {
+    background-color: white; /* Button background */
+    color: black; /* Button text color */
+    padding: 20px 40px; /* Double the padding for a larger button */
+    font-size: 36px; /* Increase the font size */
+    border: none; /* Remove any default border */
+    cursor: pointer; /* Change mouse cursor to pointer when hovering over the button */
+    position: absolute; /* Position the button absolutely relative to its positioned parent */
+    left: 50%; /* Position from the left half of the parent */
+    bottom: 10px; /* Position from the bottom of the parent */
+    transform: translateX(-50%); /* Center the button */
+    margin-top: 20px; /* Add some space above the button */
+  }
+  
+  /* You might need to add some bottom padding to the body if the button is cut off */
+  body {
+    padding-bottom: 100px; /* Adjust this value as needed to prevent the button from being cut off */
+  }
+  
+  /* Style updates for imageContainer to add spacing for the button */
+  #imageContainer {
+    margin-bottom: 120px; /* Add space below the images for the button */
+  }
+  
+  /* Style for the image container */
+  #imageContainer img {
+    max-width: 90%; /* Make the image a maximum of 90% of its container width */
+    height: auto; /* Keep image height proportional to its width */
+  }
+  
+  /* Style for the action text */
+  #actionText h2 {
+    color: yellow; /* Set the text color for the title to yellow */
+    margin: 10px 0 0 0; /* Top margin for the title */
+  }
+  
+  #actionText .instructions {
+    color: white; /* Set the text color for instructions to white */
+    font-size: 1.2em; /* Larger font size for instructions */
+    margin-top: 20px; /* Space above the instructions */
+  }
+  
+  
