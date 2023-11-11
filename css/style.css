@@ -2,9 +2,11 @@
 
 /* New CSS for the title image */
 #titleImage {
-  width: 100%; /* Make the image responsive */
-  max-width: 600px; /* Maximum width */
-  margin: 0 auto; /* Center the image */
+  width: auto; /* Allow the image to scale based on its original size */
+  max-width: 33%; /* Set the maximum width to one-third of the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Block display to allow margin auto to work */
+  margin: 20px auto; /* Center the image horizontally and add some space */
 }
 
 /* Updated CSS for the game container */
