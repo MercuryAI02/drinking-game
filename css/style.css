@@ -1,13 +1,11 @@
-/* Existing CSS for body, etc... */
-
-/* Add CSS for the body to set the background color */
+/* Global styles */
 body {
   background-color: #000000; /* Set the background color to black */
-  /* Other styles for body if needed */
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   color: white; /* Default text color set to white */
+  text-align: center;
 }
 
 /* CSS for the title image */
@@ -18,64 +16,81 @@ body {
   margin: 20px auto; /* Center the image horizontally and add some space */
 }
 
-/* Ensure that the CSS for the game images matches */
+/* CSS for the image container */
 #imageContainer {
-  width: 90%; /* or whatever width you prefer */
+  width: 90%; /* Width of the game images */
   margin: 0 auto 20px;
-  min-height: 300px; /* Adjust this value based on the average height of your images */
-  position: relative; /* Ensures that the button stays below regardless of image container height */
+  min-height: 300px; /* Minimum height to prevent layout shift */
+  position: relative; /* Ensure the START button stays below */
 }
-
 
 /* CSS for the game container */
 #gameContainer {
   text-align: center; /* Center contents */
-  padding-bottom: 20px; /* Add padding to the bottom to avoid overlap */
+  padding-bottom: 20px; /* Add padding to avoid overlap */
 }
 
 /* CSS for the START button */
 #startButton {
   background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
-  color: #fff; /* White text color */
-  padding: 20px 40px;
-  font-size: 1.5em;
-  border: none;
-  border-radius: 25px; /* Round corners */
-  cursor: pointer;
-  display: block;
-  width: 60%; /* Adjust width as needed */
-  margin: 20px auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  color: white; /* White text color */
+  padding: 20px 40px; /* Padding for a larger button */
+  font-size: 1.5em; /* Font size */
+  border: none; /* No border */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Cursor indicates button */
+  display: block; /* Display as block for full width */
+  width: 60%; /* Button width */
+  margin: 20px auto; /* Center button horizontally */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  transition: all 0.3s ease; /* Transition for interaction */
 }
 
 #startButton:hover, #startButton:focus {
-  background: linear-gradient(to right, #feb47b, #ff7e5f); /* Change gradient direction */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
-  transform: translateY(-2px); /* Slight lift */
+  background: linear-gradient(to right, #feb47b, #ff7e5f); /* Hover background */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Hover box shadow */
+  transform: translateY(-2px); /* Lift button on hover */
 }
 
 /* CSS for the action text */
 #actionText h2 {
-  color: yellow; /* Keep the title yellow */
-  margin: 10px 0 0 0; /* Margin adjustment */
+  color: yellow; /* Title color */
+  margin: 10px 0 0 0; /* Top margin */
 }
 
 #actionText .instructions {
-  color: white;
-  font-size: 1.2em;
-  margin-top: 20px;
-  margin-bottom: 40px; /* Increase the bottom margin to ensure separation from the START button */
+  color: white; /* Instructions color */
+  font-size: 1.2em; /* Instructions font size */
+  margin-top: 20px; /* Top margin */
+  margin-bottom: 40px; /* Bottom margin for START button */
 }
 
-/* Add media query for mobile responsiveness */
+/* Mobile styles */
 @media (max-width: 768px) {
   #startButton {
-    width: 80%; /* Increase width of the button on mobile for easier tap */
-    margin-bottom: 40px; /* Increase the bottom margin on mobile to prevent overlap */
+    width: 80%; /* Mobile button width */
+    margin-bottom: 40px; /* Bottom margin on mobile */
   }
 
   #titleImage {
-    max-width: 50%; /* Increase the max-width for mobile devices if the title image is too small */
+    max-width: 90%; /* Full width on mobile */
+  }
+}
+
+/* Styles for larger screens to adjust image size and positioning */
+@media (min-width: 768px) {
+  #titleImage, #imageContainer img {
+    max-width: 600px; /* Max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the images */
+  }
+
+  #gameContainer {
+    max-width: 650px; /* Max width for the game container on larger screens */
+    margin: auto; /* Center the game container */
+  }
+
+  #startButton {
+    width: 50%; /* Button width on larger screens */
   }
 }
