@@ -1,5 +1,15 @@
 /* Existing CSS for body, etc... */
 
+/* Add CSS for the body to set the background color */
+body {
+  background-color: #000000; /* Set the background color to black */
+  /* Other styles for body if needed */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white; /* Default text color set to white */
+}
+
 /* CSS for the title image */
 #titleImage {
   width: auto; /* Adjust the width based on the original size */
