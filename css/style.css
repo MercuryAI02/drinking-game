@@ -75,6 +75,23 @@ body {
   margin-bottom: 40px; /* Bottom margin for START button */
 }
 
+/* Styles for larger screens to adjust top image size */
+@media (min-width: 768px) {
+  #topImage {
+    max-width: 600px; /* Adjust the max width for larger screens or as needed */
+    margin: 20px auto; /* Center the image */
+  }
+
+  /* ... other styles for larger screens ... */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #topImage {
+    width: 90%; /* Full width on mobile */
+    margin: 10px auto; /* Adjust margin as needed */
+  }
+
 /* Mobile styles */
 @media (max-width: 768px) {
   #titleImage, #imageContainer img {
