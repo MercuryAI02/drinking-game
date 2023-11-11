@@ -23,8 +23,10 @@ var cards = [
 var roulette;
 
 document.getElementById('startButton').addEventListener('click', function() {
-  // Hide the top image
-  document.getElementById('topImage').style.display = 'none';
+  // Change the top image to title image when the game starts
+  var topImage = document.getElementById('topImage');
+  topImage.src = 'images/title.jpg';
+  topImage.alt = 'Game Title';
 
   // Play the sound effect
   var soundEffect = document.getElementById('soundEffect');
